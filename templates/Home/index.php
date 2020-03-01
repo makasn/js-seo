@@ -27,8 +27,8 @@ if (!Configure::read('debug')) :
         'Please replace templates/Pages/home.php with your own version or re-enable debug mode.'
     );
 endif;
-
-$cakeDescription = 'CakePHP: the rapid development PHP framework';
+$message = '猫神社｜猫を愛する人たちの集うところ。猫神社で猫を愛で、猫に好かれる人生を送ろう。';
+$this->assign('title', $message);
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,10 +36,10 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-        <?= $cakeDescription ?>:
         <?= $this->fetch('title') ?>
     </title>
-    <?= $this->Html->meta('icon') ?>
+    <?= $this->Html->meta('icon', '/favicon.ico?ver=0001') ?>
+    <?= $this->Html->meta('keywords', '猫, ねこ, 猫神さま, ペット, 神社, 人気の猫') ?>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
