@@ -96,3 +96,9 @@ $routes->scope('/', function (RouteBuilder $builder) {
  * });
  * ```
  */
+
+$routes->scope('/api', function (RouteBuilder $builder) {
+    $builder->setExtensions(['json']);
+    $builder->resources('CatGods', ['only' => ['index'], 'path' => 'cats']);
+    $builder->resources('Comments', ['only' => ['index']]);
+});
