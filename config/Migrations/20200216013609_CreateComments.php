@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 use Migrations\AbstractMigration;
 
-class CreateCatGods extends AbstractMigration
+class CreateComments extends AbstractMigration
 {
     /**
      * Change Method.
@@ -14,10 +14,9 @@ class CreateCatGods extends AbstractMigration
      */
     public function change()
     {
-        $table = $this->table('cat_gods');
+        $table = $this->table('comments');
         $table->addColumn('name', 'string', ['limit' => 40])
-              ->addColumn('description', 'text')
-              ->addColumn('image_name', 'text')
+              ->addColumn('comment', 'text')
               ->addColumn('created', 'datetime')
               ->addColumn('updated', 'datetime')
               ->create();
