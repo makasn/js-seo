@@ -21,12 +21,6 @@ use Cake\Error\Debugger;
 use Cake\Http\Exception\NotFoundException;
 
 $this->disableAutoLayout();
-
-if (!Configure::read('debug')) :
-    throw new NotFoundException(
-        'Please replace templates/Pages/home.php with your own version or re-enable debug mode.'
-    );
-endif;
 $message = '猫神社｜猫を愛する人たちの集うところ。猫神社で猫を愛で、猫に好かれる人生を送ろう。';
 $this->assign('title', $message);
 ?>
