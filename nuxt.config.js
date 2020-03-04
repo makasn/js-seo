@@ -5,11 +5,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: '猫神社｜猫を愛する人たちの集うところ。猫神社で猫を愛で、猫に好かれる人生を送ろう。',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'keyword', name: 'keyword', content: '猫, ねこ, 猫神さま, ペット, 神社, 人気の猫' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -38,7 +38,7 @@ export default {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/stylelint-module
-    '@nuxtjs/stylelint-module',
+    //'@nuxtjs/stylelint-module',
   ],
   /*
   ** Nuxt.js modules
